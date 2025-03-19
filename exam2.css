@@ -1,0 +1,149 @@
+.body-main {
+    background-image: url(img/tea-garden.webp);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.navbar {
+    font-family: inherit;
+    border: 3px solid rgb(255, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.navbar.links {
+    font-style: italic;
+}
+
+.main-title-text {
+    font-size: 60px;
+}
+
+.main-title {
+    font-style: unset;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.main-title-subtext {
+    font-size: 36px;
+}
+
+.container-projects {
+    padding: 10px;
+    border-width: 3px;
+    border-color: rgb(255, 234, 0);
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    gap: 5px;
+}
+
+.project-items {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(70, 115, 231, 0.687);
+    color: rgb(0, 0, 0);
+
+}
+
+.title-game {
+    font-style: unset;
+    font-size: 25px;
+}
+
+.project-image {
+    height: 90px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:600px) {
+    .container-projects {
+        flex-direction: column;
+    }
+
+    .project-image {
+        height: 200px;
+        
+    }
+}
+
+.footer-items {
+    border-width: 8px;
+    border-color: rgb(249, 249, 249);
+    display: flex;
+    border-style: solid;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(2, 57, 255, 0.938), rgba(255, 0, 0, 0), rgba(251, 8, 8, 0.938));
+    margin-top: 7px;
+    border-radius: 20px;
+    border-width: 3px;
+}
+.footer-paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.footer-copy {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f8f8f8, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+    }
+}
+@media only screen and (max-width:600px) {
+    .container-projects {
+        flex-direction: column;
+    }
+    .project-image {
+        height: 200px
+    }
+    .navbar {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+        .main-title-text{
+         font-size:29px ;
+        }
+        .main-title-subtext{
+        font-size:19px ;   
+        }
+        .title-game{
+            margin-top:10px;
+            margin-bottom:0px;
+        }
+}
